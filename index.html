@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <style>
+    *{
+    	padding:0;
+    	margin:0px;
+    }
+     body{
+     	/*height: 100%;*/
+     	background: url("timg.gif")center center; 
+     }
+     .box{
+     	width: 149px;
+     	height: 298px;
+     	background: url("1.jpg")center center/cover no-repeat;
+     	position: absolute;
+        left:50%;
+        top: 50%;
+        transform:translate(-50%,-50%);
+        display: none;
+
+     }
+</style>
+</head>
+<body>
+    <div class="box" id="box">
+    </div>
+</body>
+</html>
+<script src="8.js"></script>
+<script>
+    var box=document.getElementById("box");
+     setTimeout(function(){
+     	box.style.transition="all 50s linear 50s";
+        box.style.display="block";
+     },3000)
+</script>
